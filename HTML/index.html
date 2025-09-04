@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Jefferson Costa</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+  </head>
+  <body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">Início</a>
+        </li>
+
+        <li>
+          <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
+
+        <li>
+          <a href="#projetos" class="menu-link">Projetos</a>
+        </li>
+
+        <li>
+          <a href="#contatos" class="menu-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="inicio">
+      <img src="../Imagens/perfil-jefferson.jpg" alt="imagem-perfil" class="foto-perfil" />
+      <h1 class="nome-perfil">Jefferson Costa</h1>
+      <p class="funcao">Analista de Sistemas</p>
+      <ul class="bloco-social">
+        <li>
+            <a class="menu-link" href="https://www.linkedin.com/in/jefferson-costa-0205/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><img class="imagem-social" src="../Imagens/linkedin.jpg" alt=""></a>
+        </li>
+        <li>
+            <a class="menu-link" href="https://github.com/jeffersonccosta" title="GitHub" target="_blank" rel="noopener noreferrer"><img class="imagem-social" src="../Imagens/github.png" alt=""></a>
+        </li>
+      </ul>
+    </main>
+
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-texto">
+          Estudante de Sistemas de Informação na UFU, com sólida base em lógica
+          de programação e experiência prática em desenvolvimento de chatbots e
+          manipulação de dados. Proativo, com aprendizado rápido e foco em
+          evolução contínua como desenvolvedor. Busco uma oportunidade para
+          aplicar meus conhecimentos em projetos reais e contribuir com soluções
+          inovadoras.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Projetos Atuais</h2>
+
+      <div class="projetos-caixa">
+        <div class="projetos-card">
+          <a href="https://github.com/JeffersonCCosta/Sistema-de-Estacionamento" title="Sistema de Estacionamento" target="_blank" rel="noopener noreferrer"><img src="../Imagens/sistemaEstacionamento.png" alt="" class="projetos-imagem"></a>
+          <div class="caixa-textos-projeto">
+            <h3 class="projetos-titulo-infomração">Sistema de Estacionamento</h3>
+            <p class="projetos-infomração">Projeto em desenvolvimento para um sistema de gerenciamento de estacionamento, utilizando Java com Spring Boot 
+              no backend e HTML, CSS e JavaScript no frontend. O sistema tem como objetivo cadastrar veículos, registrar entradas e saídas e disponibilizar 
+              consultas em tempo real, visando eficiência e praticidade na gestão.</p>
+          </div>
+        </div>
+
+        <!--
+        <div class="projetos-card">
+          <img src="avatar.jpg" alt="" class="projetos-imagem" />
+          <div class="caixa-textos-projeto">
+            <h3 class="projetos-titulo-infomração">Nome do Projeto</h3>
+            <p class="projetos-infomração">Texto informativo</p>
+          </div>
+        </div>
+
+        <div class="projetos-card">
+          <img src="avatar.jpg" alt="" class="projetos-imagem" />
+          <div class="caixa-textos-projeto">
+            <h3 class="projetos-titulo-infomração">Nome do Projeto</h3>
+            <p class="projetos-infomração">Texto informativo</p>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Contatos</h2>
+      <form action="" class="contatos-formulario" id="contatos-formulario" onsubmit="enviarMensagem(event)">
+        <div class="cotnatos-nome">
+          <input placeholder="Nome" class="campo-nome" id="nome">
+        </div>
+        <div class="contatos-mensagem">
+          <textarea class="campo-mensagem" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+        </div>
+
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
+      </form>
+    </section>
+
+    <script src="/Script/script.js"></script>
+  </body>
+</html>
